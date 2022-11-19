@@ -1,8 +1,7 @@
 ﻿![enter image description here](https://i.imgur.com/MIALh25.png)
 **Molecular Dynamics Simulation and Analysis of Interaction Between the ZO-1 PDZ1 Domain and Claudin-5**
 
-Roshan Pathak (1,*)
-
+Roshan Pathak 
 
 **Overview**
 
@@ -22,7 +21,9 @@ After determining this pose, the PDB file was imported to VMD. In VMD, a bond wa
 
 To solvate this structure, CHARMM-GUI was used to make a TIP3 waterbox, using the structure dimensions to make the waterbox and solvating the box with 0.15M NaCl.
 
-This solvated structure was imported back into VMD and a PSF structure file was generated for later use. ![Image of the system rendered in ChimeraX](https://i.imgur.com/i5blCQI.png)
+This solvated structure was imported back into VMD and a PSF structure file was generated for later use. 
+
+![Image of the system rendered in ChimeraX](https://i.imgur.com/i5blCQI.png)
 
 **Preparation of Configuration Files**
 
@@ -53,6 +54,7 @@ Additionally, CHARMM36 force fields and parameters were downloaded and are loade
 Prior to beginning simulation, the energy minimum of a system must be reached. In order to do this, overlapping atoms (or bad contacts) must be eliminated and a stable conformation of atoms must be reached. For this minimization run, the system was minimized 10,000 times and was then allowed to run for 20,000 timesteps. The timestep used in the configuration file was `timestep = 2.0`, or 2.0 femtoseconds. Thus, the system was minimized and run for 40 picoseconds (40 ps). A constant pressure (1 atm) and temperature (0K) were maintained using LangevinPiston and LangevinDamping respectively. These systems control temperature and pressure by introducing friction to the system and controlling kinetic energy.
 
 To see if energy minimization occurred ,the NAMDPlot program was used to graph the variable TOTAL (total energy) against TS (timesteps). From here, it seems that the system did reach an energy minimum and stabilized at a value of approx. -1143945kcal/mol:
+
 ![Energy minimization.](https://i.imgur.com/Msm8uCL.png)
 
 **Heating**
@@ -71,8 +73,6 @@ For the heating run, the coordinates from the minimization run were loaded as st
 **Equilibration**
 
 Much like minimization, equilibration runs aim to bring the system to the most stable state. Most unequilibrated runs have atoms move and structures expand and contract in extreme ways, which should not be interpreted as viable simulation results.
-
-Additionally, the temperature and pressure were maintained using the same tools as in the heating step (canonical and grand canonical ensembles).
 
 For this equilibration run, the final heat coordinates and extended system files were used as the starting point:
 
