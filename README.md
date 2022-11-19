@@ -47,6 +47,7 @@ The dimensions from this script were inputted into the configuration files for N
 For all subsequent steps, the configuration files were altered versions of the configuration files from the lab of Dr. Tamal Banerjee (IIT Guwhati).
 
 Additionally, CHARMM36 force fields and parameters were downloaded and are loaded in all subsequent configuration files. CHARMM topology files were used to generate the PSF file of the solvated and ionized complex.
+
 ![Image of the system rendered in VMD, colored beads are Na and Cl ions, water molecules are not visible.](https://i.imgur.com/c1EelUA.png)
 
 **Minimization**
