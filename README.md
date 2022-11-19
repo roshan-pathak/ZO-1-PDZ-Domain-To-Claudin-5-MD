@@ -3,8 +3,6 @@
 
 Roshan Pathak (1,*)
 
-1 Johns Hopkins University, Baltimore, MD 21218
-*Information redacted, contact to inquire
 
 **Overview**
 
