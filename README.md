@@ -1,4 +1,5 @@
-﻿**Molecular Dynamics Simulation and Analysis of Interaction Between the ZO-1 PDZ1 Domain and Claudin-5**
+﻿![enter image description here](https://i.imgur.com/MIALh25.png)
+**Molecular Dynamics Simulation and Analysis of Interaction Between the ZO-1 PDZ1 Domain and Claudin-5**
 
 Roshan Pathak (1,*)
 
